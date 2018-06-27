@@ -14,6 +14,13 @@ jar --create \
     --file mlib/com.coffee@1.0.jar \
 	--module-version 1.0  \
 	-C mods/com.coffee .
+	
+echo ""
+echo "${info} *** Creating module com.tea as a jar in the 'mlib' folder *** ${normal}"
+jar --create \
+    --file mlib/com.tea@1.0.jar \
+	--module-version 1.0  \
+	-C mods/com.tea .	
 
 echo ""
 echo "${info} *** Creating module com.bbd as a jar in the 'mlib' folder *** ${normal}"

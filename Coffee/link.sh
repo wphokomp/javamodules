@@ -2,22 +2,22 @@
 
 set -eu
 
-source ../../common-functions.sh
+source common-functions.sh
 
 echo ""
 echo "${info} *** Removing any existing executable directories *** ${normal}"
 rm -rf executable
 
 echo ""
-echo "${info} *** Create an executable version of the com.greetings module *** ${normal}"
+echo "${info} *** Create an executable version of the com.bbd module *** ${normal}"
 if [[ "$OSTYPE" == "cygwin" ]] || [[ "$OSTYPE" == "msys" ]] ; then
     # Windows users: please not that if the below fails due to JAVA_HOME substitution, please hard-code the JAVA_HOME path into the script
     jlink --module-path "${JAVA_HOME}\jmods;mlib" \
-          --add-modules com.greetings \
+          --add-modules com.bbd \
           --output executable
 else
     jlink --module-path "${JAVA_HOME}"/jmods:mlib \
-          --add-modules com.greetings \
+          --add-modules com.bbd \
           --output executable
 fi
 

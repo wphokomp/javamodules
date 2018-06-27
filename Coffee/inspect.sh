@@ -2,7 +2,7 @@
 
 set -eu
 
-source ../../common-functions.sh
+source common-functions.sh
 
 echo ""
 echo "${info} *** Size (footprint) of the distributable JDK binary (executable folder) *** ${normal}"
