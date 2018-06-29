@@ -25,3 +25,5 @@ javac -d $DESTINATION_FOLDER \
 echo ""
 echo "${info} *** Displaying the contents (modules) of the 'mods' folder *** ${normal}"
 runTree "$DESTINATION_FOLDER"
+
+echo Press enter to continue; read dummy;

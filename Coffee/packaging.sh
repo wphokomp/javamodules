@@ -43,3 +43,6 @@ echo ""
 echo "${info} *** Printing module description for com.bbd jar file *** ${normal}"
 jar --describe-module  \
     --file=mlib/com.bbd.jar
+
+
+echo Press enter to continue; read dummy;

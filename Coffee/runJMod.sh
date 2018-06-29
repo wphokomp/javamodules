@@ -28,3 +28,5 @@ jmod list coffee.jmod
 
 echo "${info} *** Currently JMOD files can be used at compile time and link time, but not at run time. *** ${normal}"
 echo "${info} *** Read further about JMod files at http://openjdk.java.net/jeps/261#Packaging:-JMOD-files *** ${normal}"
+
+echo Press enter to continue; read dummy;

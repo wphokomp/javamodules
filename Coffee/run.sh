@@ -9,3 +9,6 @@ echo "${info} *** Running 'com.bbd.ILikeCoffee' from within the mods folder (mod
 echo 
 java --module-path mods \
      --module com.bbd/com.bbd.ILikeCoffee
+
+
+echo Press enter to continue; read dummy;

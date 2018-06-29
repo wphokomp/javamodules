@@ -16,3 +16,5 @@ echo
 echo "${info} *** Running 'com.bbd.ILikeCoffee' from the via the main jar file in a separate 'mlib' folder using the java launcher in the 'executable' folder *** ${normal}"
 echo
 executable/bin/java -jar mlib/com.bbd.jar com.bbd.ILikeCoffee
+
+echo Press enter to continue; read dummy;

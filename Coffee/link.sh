@@ -37,3 +37,5 @@ runTree executable
 # The value to `--module-path` is a PATH of directories containing the packaged modules.
 # Replace the path separator ':' with ';' on Microsoft Windows.
 # ****************************************************************************************************************************
+
+echo Press enter to continue; read dummy;

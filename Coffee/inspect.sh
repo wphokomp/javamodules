@@ -27,4 +27,5 @@ echo
 echo "${info} *** Run the command 'jimage list executable/lib/modules | less' at the command line to see the detailed contents of the 'executable/lib/modules' image ${normal}"
 echo "${info} *** 'jimage --help' prints more help on this tool ${normal}"
 
+echo Press enter to continue; read dummy;
 
