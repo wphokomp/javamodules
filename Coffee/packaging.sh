@@ -23,11 +23,11 @@ jar --create \
 	-C mods/com.tea .	
 
 echo ""
-echo "${info} *** Creating module com.bbd as a jar in the 'mlib' folder *** ${normal}"
+echo "${info} *** Creating module com.app as a jar in the 'mlib' folder *** ${normal}"
 jar --create \
-    --file mlib/com.bbd.jar \
-	--main-class=com.bbd.ILikeCoffee \
-	-C mods/com.bbd .
+    --file mlib/com.app.jar \
+	--main-class=com.app.CoffeeApp \
+	-C mods/com.app .
 
 
 echo ""
@@ -40,9 +40,9 @@ jar --describe-module  \
     --file=mlib/com.coffee@1.0.jar
 
 echo ""
-echo "${info} *** Printing module description for com.bbd jar file *** ${normal}"
+echo "${info} *** Printing module description for com.app jar file *** ${normal}"
 jar --describe-module  \
-    --file=mlib/com.bbd.jar
+    --file=mlib/com.app.jar
 
 
 echo Press enter to continue; read dummy;

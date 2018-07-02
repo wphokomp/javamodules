@@ -13,11 +13,11 @@ echo ""
 echo "${info} *** Creating a module (coffee.jmod) from multiple modules / packages / classes with jlink. *** ${normal}"
 if [[ "$OSTYPE" == "cygwin" ]] || [[ "$OSTYPE" == "msys" ]] ; then
 	jmod create \
-	     --class-path "mods\com.bbd;mods\com.coffee;mods\com.tea" \
+	     --class-path "mods\com.app;mods\com.coffee;mods\com.tea" \
 	     coffee.jmod
 else
 	jmod create \
-	     --class-path mods/com.bbd:mods/com.coffee:mods/com.tea \
+	     --class-path mods/com.app:mods/com.coffee:mods/com.tea \
 	     coffee.jmod
 fi
 
