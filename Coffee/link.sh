@@ -17,7 +17,7 @@ if [[ "$OSTYPE" == "cygwin" ]] || [[ "$OSTYPE" == "msys" ]] ; then
 		  --no-header-files \
 		  --compress=2 \
 		  --module-path "${JAVA_HOME}\jmods;mlib" \
-          --add-modules com.app \
+          --add-modules com.app,java.sql,java.logging \
           --output executable
 else
     jlink  --strip-debug \
@@ -25,7 +25,7 @@ else
 		  --no-header-files \
 		  --compress=2 \
 		  --module-path "${JAVA_HOME}"/jmods:mlib \
-          --add-modules com.app \
+          --add-modules com.app,java.sql,java.logging \
           --output executable
 fi
 
